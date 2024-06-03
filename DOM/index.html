@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <header id="mainHeader">
+        <nav>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Gallerie</a></li>
+                <li class="active"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menuToggle" class="hamburger">&nbsp;</button>
+    </header>
+    
+    <section id="pageContent">
+        <main>
+            <h1>Contactez-nous</h1>
+            <p>Merci de completer le formulaire suivant pour contacter.</p>
+            <form action="" id="frmContact">
+                <div id="leftCol">
+                    <div>
+                        <label for="fName">Prénom</label>
+                        <input type="text" name="fName" id="fName" required title="Votre prenom est une information">
+                    </div>
+                    <div>
+                        <label for="lName">Nom de famille</label>
+                        <input type="text" name="lName" id="lName" required>
+                    </div>
+                    <div>
+                        <label for="mail">Adresse Email</label>
+                        <input type="mail" name="mail" id="mail" required>
+                    </div>
+                   <div id="rightCol">
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" required></textarea>
+                    </div>
+                   </div>
+                   <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </main>
+    </section>
+    <footer id="mainFooter">
+        <p>&copy; copyright Damien Brunyndonckx - 2019</p>
+    </footer>
+    
+    <script src="dom.js"></script>
+</body>
+</html>
