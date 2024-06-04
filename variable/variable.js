@@ -40,3 +40,18 @@ if (a == b) {
 }else{
     console.log('la reponse à la question est "false".');
 }
+
+//Utiliser la syntaxe conditionnelle
+var age = 45;
+if (a >= 18) {
+    console.log(`A ${age} ans, vous etes majeur.`);
+}else{
+    console.log(`A ${age} ans, vous etes encore mineur.`);
+}
+
+//Operateur ternaire
+var age = 40;
+
+//question ? valeur si vrai : valeur si faux;
+
+age >= 18 ? console.log(`A ${age} ans, vous etes majeur.`) : console.log(`A ${age} ans, vous etes encore mineur.`);
