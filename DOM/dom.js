@@ -24,3 +24,44 @@ console.log(par);
 //Pour changer le backgroundImage
 // let pageContent = document.getElementById('pageContent');
 // pageContent.style.backgroundImage = 'url(image.png)'
+
+//evenement
+let galImages = document.querySelectorAll('#singleGallery img');
+for(images of galImages){
+    image.onclick = () => {
+        alert("Bonjour !");
+    }
+}
+//utiliser addEvenListener et l'evenement click
+for(let i = 0; i < galImages.length; i++){
+    let image = galImages[i];
+    image.addEventListener('click', showSinglePict, false);
+    
+    image.addEventListener('click', () => {alert('Bonjour !')}, false);
+
+    image.addEventListener('click', () => {alert('Au revoir !')}, false);
+
+}
+
+function showSinglePict(e) {
+    let image = e.target;
+    let imageContainer = document.getElementById('galleryContainer');
+    let bigImage = imageContainer.querySelector('img');
+    bigImage.src = image.src;
+    imageContainer.classList.toggle('visible');
+    imageContainer.addEventListener('click', closeSinglePict, false);
+}
+
+function closeSinglePict() {
+    let imageContainer = document.getElementById('galleryContainer');
+    imageContainer.classList.toggle('visible');
+}
+//Inspecter les proprietes des evenements
+for(let i = 0; i < galImages.length; i++){
+    let image = galImages[i];
+    image.addEventListener('click', showSinglePict, false);
+}
+
+function showSinglePict(e){
+    let image = e.target;
+}

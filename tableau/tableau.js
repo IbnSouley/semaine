@@ -31,3 +31,28 @@ document.write(" le nombre de valeurs du tableau est :" + mois.length);
 
 //Afficher la troisieme valeur du tableau
 document.write(" la troisieme valeur du mois est : " + mois[2]);
+
+//Decouvrir l'objet math
+let a = 2.2, b = 6, c = 3, myNumber;
+myNumber = Math;
+console.log(myNumber);
+
+//Employer l'objet Number
+myNumber = Number.MAX_VALUE; //constant
+myNumber = 10.84;
+// console.log(Number.isInteger(myNumber));
+console.log(myNumber.toPrecision(2));
+
+//Travailler avec l'objet date
+let today = new Date();
+let birthday = new Date(2024, 6, 15, 17, 30);
+console.log(today);
+
+//Travailler avec des objets
+var person = {
+    firstName : "Mamadou",
+    lastName : "Doucoure",
+    age : 43,
+    sexe : "M"
+};
+console.log(person["age"]);
